@@ -27,8 +27,20 @@ Tasks:
    - updated all links in html for JS and CSS.
 
 5. Structure new pages and list.
+
    - create in root folder a new folder named 'pages'.
    - in index.html file create a new div with class name 'section-task_five'.
    - in this div add a link to navigate to a new page, this link name should be 'List'.
    - in pages folder create a new list.html file.
    - in this page create add a link to navigate to index.html page, this link name should be 'Home'.
+
+6. List page requirements
+   - create for list.html a new css and js file, and name this files list.'css/js' .
+   - link this two files in list.html .
+   - in list.html make a div with class name 'list-section'
+   - in this div should have full width and height
+   - create in this div a new div with class name 'list-section_navigation'.
+   - style this div to look like a navigation bar.
+   - in this navigation bar put the link to navigate to home page.
+   - navigation bar should have a darker color, but not complete black.
+   - style link to home to have white text and bold.
