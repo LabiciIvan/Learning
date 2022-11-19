@@ -25,3 +25,10 @@ Tasks:
 4. Organise the code, and move the css and js folders to public folder.
 
    - updated all links in html for JS and CSS.
+
+5. Structure new pages and list.
+   - create in root folder a new folder named 'pages'.
+   - in index.html file create a new div with class name 'section-task_one'.
+   - in this div add a link to to navigate to a new page, this link name should be 'List'.
+   - in pages folder create a new list.html file.
+   - in this page create add a link to to navigate to index.html page, this link name should be 'Home'.
