@@ -18,6 +18,4 @@ Tasks:
    - this section will have 100 vh of the screen.
    - a button with name 'alert' when click to pop a js alert.
 
-3.Create public folder and in public folder create images folder
-    - source to images folder from route ''
-
+3.Create public folder and in public folder create images folder - source to images folder from route ''
