@@ -28,7 +28,7 @@ Tasks:
 
 5. Structure new pages and list.
    - create in root folder a new folder named 'pages'.
-   - in index.html file create a new div with class name 'section-task_one'.
-   - in this div add a link to to navigate to a new page, this link name should be 'List'.
+   - in index.html file create a new div with class name 'section-task_five'.
+   - in this div add a link to navigate to a new page, this link name should be 'List'.
    - in pages folder create a new list.html file.
-   - in this page create add a link to to navigate to index.html page, this link name should be 'Home'.
+   - in this page create add a link to navigate to index.html page, this link name should be 'Home'.
