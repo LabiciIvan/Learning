@@ -17,3 +17,7 @@ Tasks:
    - create a new div as a section, name it section-task_two.
    - this section will have 100 vh of the screen.
    - a button with name 'alert' when click to pop a js alert.
+
+3.Create public folder and in public folder create images folder
+    - source to images folder from route ''
+
