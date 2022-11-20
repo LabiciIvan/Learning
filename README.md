@@ -57,11 +57,11 @@ Tasks:
 8. Creating Components folder.
 
    - in root of this project create a new folder 'components'.
-     (This folder will be used for css files that are required on more than one page).
-   - create a new CSS file 'navigation.css'.
-   - in list.html you have a navigation bar(div), Copy the code from that page CSS file (only for navigation bar), and paste it in the navigation.css.
-   - in list.css delete code responsible for navigation bar.
-   - now link in list.html the CSS file found in Components/navigation.css.
+     (This folder will be used for css files that are required on more than one page). (ok)
+   - create a new CSS file 'navigation.css'. (ok)
+   - in list.html you have a navigation bar(div), Copy the code from that page CSS file (only for navigation bar), and paste it in the navigation.css.(ok)
+   - in list.css delete code responsible for navigation bar.(ok)
+   - now link in list.html the CSS file found in Components/navigation.css.(ok)
      (To be easy for use, we will only write the exact same class name for navigation bar and same html element, in the page where we want to use navigation bar, and only link the navigation.css from Components)
 
 9. Reworking the index.html.
