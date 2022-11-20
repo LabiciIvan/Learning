@@ -3,6 +3,7 @@ Rules:
 1. All css file need to be in css folder.
 2. All js file need to be in js folder.
 3. Before to start working on a task, make sure to update development branch and create a new branch feature/task\_'task_number'
+4. All CSS and JS files should start their file name with a lowercase letter.
 
 Tasks:
 
@@ -35,6 +36,7 @@ Tasks:
    - in this page create add a link to navigate to index.html page, this link name should be 'Home'.
 
 6. List page requirements
+
    - create for list.html a new css and js file, and name this files list.'css/js' .
    - link this two files in list.html .
    - in list.html make a div with class name 'list-section'
@@ -44,3 +46,40 @@ Tasks:
    - in this navigation bar put the link to navigate to home page.
    - navigation bar should have a darker color, but not complete black.
    - style link to home to have white text and bold.
+
+7. Refactorin index.html
+   .In index.html change next things:
+
+   - remove evertything starting line 13 to ending line 40.
+   - unlink task_one and task_two CSS/JS files and delete this files from their folders.
+   - renamed js and css files of index.html, from Index.css to index.css.
+
+8. Creating Components folder.
+
+   - in root of this project create a new folder 'components'.
+     (This folder will be used for css files that are required on more than one page).
+   - create a new CSS file 'navigation.css'.
+   - in list.html you have a navigation bar(div), Copy the code from that page CSS file (only for navigation bar), and paste it in the navigation.css.
+   - in list.css delete code responsible for navigation bar.
+   - now link in list.html the CSS file found in Components/navigation.css.
+     (To be easy for use, we will only write the exact same class name for navigation bar and same html element, in the page where we want to use navigation bar, and only link the navigation.css from Components)
+
+9. Reworking the index.html.
+
+   - delete section-task_five div, and only keep the a element.
+   - between </head> and last line of </html> insert a body element.
+   - in body element create a new div with class name 'section-index'.
+   - this div should have 100 height and in this div put havigation bar.
+     ( navigation bar should be always at top of the page)
+   - this navigation bar should have link to list.html.
+   - this page index.html by now should only have a navigation bar at the top of the page.
+   - in the middlew of the page, create 3 black squares, not too big but not too small, and in every square should have a wordm in this order
+     Read Implement Repeat, and style them to look good.
+
+10. Improving list.html
+
+- make a input filed so user can insert data.
+- near the input field make a button 'insert'
+- when user write something in input and press insert, data should be received in a js function named getDataFromUser().
+- this function should be placed in list.html's js file, not in any js file.
+- in list.html inside the div with class name 'list-section-navigation' you should create a new div with class name 'list-from-user', and in this div, you should place with JS the data that were recieved in getDataFromUser().
