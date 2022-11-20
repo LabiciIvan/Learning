@@ -74,7 +74,7 @@ Tasks:
    - this navigation bar should have link to list.html.(ok)
    - this page index.html by now should only have a navigation bar at the top of the page.(ok)
    - in the middlew of the page, create 3 black squares, not too big but not too small, and in every square should have a wordm in this order
-     Read Implement Repeat, and style them to look good.(in progres)
+     Read Implement Repeat, and style them to look good.(ok)
 
 10. Improving list.html
 
