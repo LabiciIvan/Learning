@@ -50,9 +50,9 @@ Tasks:
 7. Refactorin index.html
    .In index.html change next things:
 
-   - remove evertything starting line 13 to ending line 40.
-   - unlink task_one and task_two CSS/JS files and delete this files from their folders.
-   - renamed js and css files of index.html, from Index.css to index.css.
+   - remove evertything starting line 13 to ending line 40. (ok)
+   - unlink task_one and task_two CSS/JS files and delete this files from their folders. (ok)
+   - renamed js and css files of index.html, from Index.css to index.css. (ok)
 
 8. Creating Components folder.
 
