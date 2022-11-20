@@ -66,15 +66,15 @@ Tasks:
 
 9. Reworking the index.html.
 
-   - delete section-task_five div, and only keep the a element.
-   - between </head> and last line of </html> insert a body element.
-   - in body element create a new div with class name 'section-index'.
-   - this div should have 100 height and in this div put havigation bar.
+   - delete section-task_five div, and only keep the a element.(ok)
+   - between </head> and last line of </html> insert a body element.(ok)
+   - in body element create a new div with class name 'section-index'.(ok)
+   - this div should have 100 height and in this div put havigation bar.(ok)
      ( navigation bar should be always at top of the page)
-   - this navigation bar should have link to list.html.
-   - this page index.html by now should only have a navigation bar at the top of the page.
+   - this navigation bar should have link to list.html.(ok)
+   - this page index.html by now should only have a navigation bar at the top of the page.(ok)
    - in the middlew of the page, create 3 black squares, not too big but not too small, and in every square should have a wordm in this order
-     Read Implement Repeat, and style them to look good.
+     Read Implement Repeat, and style them to look good.(in progres)
 
 10. Improving list.html
 
