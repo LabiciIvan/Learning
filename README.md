@@ -83,3 +83,6 @@ Tasks:
 - when user write something in input and press insert, data should be received in a js function named getDataFromUser().
 - this function should be placed in list.html's js file, not in any js file.
 - in list.html inside the div with class name 'list-section-navigation' you should create a new div with class name 'list-from-user', and in this div, you should place with JS the data that were recieved in getDataFromUser().
+
+11. FixIndex.html 
+- fix in index.html the css code, and make a PR.
