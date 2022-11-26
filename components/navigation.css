@@ -1,7 +1,7 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+//* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
 }
 
 .list-section {
@@ -26,4 +26,67 @@
     text-decoration: none;
     color: antiquewhite;
     font-size: 20px;
+}
+
+.home:hover {
+    color: antiquewhite;
+}
+
+.list-section-navigation {
+    display: grid;
+    height: 100vh;
+    background-color: rgb(225, 223, 223);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    margin-top: -525px;
+    column-gap: 5px;
+}
+
+
+.input-box {
+    display: grid;
+    grid-area: 2/3/5/5;
+    height: 70px;
+    align-self: center;
+    text-align: center;
+}
+
+.list-from-user {
+    height: 90%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    grid-area: 3/4/5/4;
+}
+
+
+.list-element {
+    width: 100%;
+    display: grid;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgb(60, 119, 208);
+    color: white;
+    height: 55%;
+    grid-area: 4/3/5/5;
+    padding-left: 7px;
+    border-radius: 5px;
+}
+
+
+.btn.btn-primary {
+    display: grid;
+    grid-area: 3/6/3/5;
+    background-color: rgb(37, 36, 36);
+    border: none;
+    color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    margin-top: 3px;
+}
+
+.btn.btn-primary:hover {
+    background-color: rgb(37, 36, 36);
 }
