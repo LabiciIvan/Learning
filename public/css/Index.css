@@ -1,95 +1,141 @@
-* {
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+#body {
+    width: 100%;
+    height: 100vh;
+    background-color: #e2e2e2;
+}
+
+
+.index-section {
+    width: 100%;
+    height: calc(100vh - 130px);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.index-left,
+.index-right {
+    font-size: 10rem;
+}
+
+.index-left {
+    display: grid;
+    grid-area: 3/3/5/6;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 43, 43);
+    color: white;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    border: 5px solid rgb(255, 195, 30);
+    border-right: none;
     box-sizing: border-box;
 }
 
-body {
-    width: 100%;
-    height: 100vh;
-}
-
-
-.list-index {
-    text-decoration: none;
-    color: antiquewhite;
-    width: 100%;
-    height: 100px;
-    background-color: rgb(37, 36, 36);
-    display: flex;
-    display: flex;
-    font-size: 20px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 0 15px 40px 0;
-}
-
-.list-index:hover {
-    color: antiquewhite;
-}
-
-body-two {
-    width: 100%;
-    height: 100vh;
-}
-
-.section-index {
+.index-right {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    column-gap: 20px;
-}
-
-.Read {
-    display: grid;
-    grid-area: 2/4/3/4;
-    width: 160px;
-    height: 125px;
-    background-color: rgb(37, 36, 36);
-    color: antiquewhite;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    grid-area: 3/6/5/7;
+    background-color: rgb(193, 189, 189);
+    color: #ffd500;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    border: 5px solid white;
+    border-left: none;
+    box-sizing: border-box;
 }
 
-.Read:hover {
-    cursor: pointer;
+#indexList {
+    grid-area: 5/3/8/7;
 }
 
-.Implement {
-    display: grid;
-    grid-area: 3/5/2/5;
-    width: 160px;
-    height: 125px;
-    background-color: rgb(37, 36, 36);
-    color: antiquewhite;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    border-radius: 5px;
+
+
+.bi.bi-check-lg {
+    color:#3da013;
+    font-size: 22px;
 }
 
-.Implement:hover {
-    cursor: pointer;
+#list-one {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.Repeat {
-    display: grid;
-    grid-area: 2/6/2/6;
-    width: 160px;
-    height: 125px;
-    background-color: rgb(37, 36, 36);
-    color: antiquewhite;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+#list-two,
+#list-three,
+#list-four,
+#list-five,
+#list-six,
+#list-seven {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 
-.Repeat:hover {
-    cursor: pointer;
+
+@media only screen and (max-width: 1600px) {
+
+    .index-section {
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .index-left,
+    .index-right {
+        font-size: 4rem;
+    }
+
+    .index-left {
+        grid-area: 2/3/4/6;
+    }
+
+    .index-right {
+        grid-area: 2/6/4/7;
+    }
+
+    #indexList {
+        grid-area: 4/3/7/7;
+        overflow-y: scroll;
+    }
+
+    #list-two,
+    #list-three,
+    #list-four,
+    #list-five,
+    #list-six,
+    #list-seven {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+ 
+    .index-left,
+    .index-right {
+        font-size: 3rem;
+    }
+
+    .index-left {
+        grid-area: 2/2/4/6;
+    }
+
+    .index-right {
+        grid-area: 2/6/4/8;
+    }
+
+    #indexList {
+        grid-area: 4/1/7/9;
+        overflow-y: scroll;
+    }
+
+    #list-two,
+    #list-three,
+    #list-four,
+    #list-five,
+    #list-six,
+    #list-seven {
+        font-size: 8px;
+    }
 }
