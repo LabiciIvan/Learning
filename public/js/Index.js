@@ -4,17 +4,17 @@ animateLogo();
 let quotePosition = 0;
 
 let quotes = [
-      "”First, solve the problem. Then, write the code.” – John Johnson",
+      "”First, solve the problem. Then, write the code.”  John Johnson",
       "“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler",
-      "“Experience is the name everyone gives to their mistakes.” – Oscar Wilde",
-      "“Java is to Javascript what car is to Carpet.” – Chris Heilmann",
-      "“Knowledge is power” – Francis Bacon",
+      "“Experience is the name everyone gives to their mistakes.”  Oscar Wilde",
+      "“Java is to Javascript what car is to Carpet.”  Chris Heilmann",
+      "“Knowledge is power”  Francis Bacon",
       "“Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.” – Dan Salomon",
       "“Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away.” – Antoine de Saint – Exupery",
-      "“ Code is like humor. When you have to explain it, it’s bad.” – Cory House",
-      "“Fix the cause, not the symptom.” – Steve Maguire",
-      "“Before software can be reusable it first has to be usable.” – Ralph Johnson",
-      "“Make it work, make it right, make it fast.” – Kent Beck",     
+      "“ Code is like humor. When you have to explain it, it’s bad.”  Cory House",
+      "“Fix the cause, not the symptom.”– Steve Maguire",
+      "“Before software can be reusable it first has to be usable.”  Ralph Johnson",
+      "“Make it work, make it right, make it fast.”  Kent Beck",     
 ];
 
 
