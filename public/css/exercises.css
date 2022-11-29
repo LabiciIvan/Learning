@@ -2,8 +2,8 @@
 
 ::-webkit-scrollbar {
       width: 10px;
-    }
-    
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
       background: #f1f1f1;
@@ -42,7 +42,7 @@
 
 
 .bg-warning-darker {
-      background-color:  #debc58;
+      background-color: #debc58;
 }
 
 .bg-light-darker {
@@ -59,6 +59,4 @@
 
 
 
-@media only screen and (max-width: 600px) {
-      
-}
+@media only screen and (max-width: 600px) {}
