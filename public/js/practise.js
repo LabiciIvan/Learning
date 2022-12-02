@@ -1,79 +1,40 @@
-// Ex 1 dublu primul numar cu functie//
+// Ex 1 dublu primul numar cu functie si parametru//
 
-DobleNumber()
-function DobleNumber() {
-    let x = 1;
-    x += 1;
-    console.log(x)
+DobleNumber(1, 2)
+function DobleNumber(number1, number2) {
+    let number = number1 += number2;
+
+    console.log(number);
 }
 
-//Ex 1 dublu al doilea numar cu functie//
-DoubleNumber1()
-function DoubleNumber1() {
-    let y = 2;
-    y += 2;
-    console.log(y);
+
+//Ex 2 patratul unui numar cu functie si parametru//
+TheSquareOfaNumbers(2, 2)
+function TheSquareOfaNumbers(num1, num2) {
+    let squareNumber = num1 *= num2;
+
+    console.log(squareNumber);
 }
 
-//Ex 2 patratul unui numar cu functie//
-TheSquareOfaNumbers()
-function TheSquareOfaNumbers() {
-    let z = 1;
-    z *= 1;
-    console.log(z);
 
-    let w = 2;
-    w *= 2;
-    console.log(w);
+//Ex 3 cel mai mare numar cu functie cu if else si parametru//
 
-    let q = 3;
-    q *= 3;
-    console.log(q);
-}
-
-//Ex 3 cel mai mare numar cu functie//
-CompareNumber()
-function CompareNumber() {
-    let x = 1;
-    let y = 3;
-    console.log(x < y)
-}
-
-CompareNumber1()
-function CompareNumber1() {
-    let x = 15;
-    let y = 4;
-    console.log(x > y);
-}
-
-CompareNumber2()
-function CompareNumber2() {
-    let x = 1;
-    let y = 1;
-    console.log(x = y);
-}
-
-//Ex 3 cel mai mare numar cu functie cu if else//
-
-CompareNumberIfElse()
-function CompareNumberIfElse() {
-    let result = "answer"
-    let number1 = 3;
-    let number2 = 3.1;
+CompareNumberIfElse(5, 3)
+function CompareNumberIfElse(number1, number2) {
+    let result = "answer is "
 
     if (number1 > number2) {
-        result = "answer" + number1;
+        result = "answer is " + number1;
 
     }
     else {
         (number2 > number1);
-        result = "answer" + number2;
+        result = "answer is " + number2;
     }
     console.log(result);
 }
 
-//Ex 4 factorialul unui numar cu functie//
-
+//Ex 4 factorialul unui numar cu functie si parametru//
 function factorial(n) {
     if (n == 0 || n == 1) {
         return 1;
@@ -82,25 +43,21 @@ function factorial(n) {
         return n * factorial(n - 1);
     }
 }
-let n = 4;
+let n = 5
 answer = factorial(n);
+
 console.log(answer);
 
-//Ex 5 numarul de litere cu ajutorul unei functi//
+//Ex 5 numarul de litere cu ajutorul unei functii cu parametru//
+numbersOfLetters("ma-ta")
+function numbersOfLetters(text) {
 
-numbersOfLetters()
-function numbersOfLetters() {
-    let text = "ana";
-    let lenght = text.length;
-    console.log(text.length);
+    let letter = text.length;
 
-    let text2 = "apple";
-    let length = text2.length;
-
-    console.log(text2.length);
+    console.log(text.length + ' ' + "number of letters in word");
 }
 
-// Ex 6 numarul de consoane dintr-un numarul//
+// Ex 6 numarul de consoane dintr-un numarul cu functie si parametru//
 
 const vowels = ["a", "e", "i", "o", "u"]
 
@@ -113,7 +70,6 @@ function countVowel(str) {
             count++;
         }
     }
-
 
     return count
 }
