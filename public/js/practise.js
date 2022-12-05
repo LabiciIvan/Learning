@@ -19,20 +19,26 @@ console.log(numbers);
 
 //Ex 3 cel mai mare numar cu functie cu if else si parametru//
 
-let compare = CompareNumberIfElse(5, 3);
+let compare = CompareNumberIfElse(2, 3);
 function CompareNumberIfElse(number1, number2) {
     let result = "answer is ";
 
     if (number1 > number2) {
-        result = "answer is " + number1;
 
+        result = number1;
+
+        return "answer is " + number1;
     }
     else {
         (number2 > number1);
-        result = "answer is " + number2;
+
+        result = number2;
+
+        return "answer is  " + number2;
     }
-    console.log(result);
+
 }
+console.log(compare);
 
 //Ex 4 factorialul unui numar cu functie si parametru//
 function factorial(n) {
