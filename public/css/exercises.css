@@ -19,15 +19,15 @@
       background: #b9993b;
 }
 
-#body {
+/* #body {
       width: 100%;
       height: 100vh;
       background-color: #e2e2e2;
-}
+} */
 
 .section-exercises {
       width: 100%;
-      height: calc(100vh - 130px);
+      /* height: calc(100vh - 130px); */
 }
 
 .bi.bi-arrow-bar-down {
@@ -43,6 +43,9 @@
 
 .bg-warning-darker {
       background-color: #debc58;
+}
+.bg-warning-darker-two {
+      background-color: #d8a149;
 }
 
 .bg-light-darker {
