@@ -109,3 +109,30 @@ const String = prompt('Introduce your word to count consonant: ');
 const Result = countConsonant(string);
 
 console.log(Result);
+
+// Ex 8 majuscule cu functie si parametru//
+
+let change = changeToUpperCase("milf")
+function changeToUpperCase(text) {
+
+    let change = text.toUpperCase();
+
+    return "text changed format and your word now is " + text.toUpperCase();
+}
+
+console.log(change);
+
+// Ex 9 scris cu litere mici cu functie si parametru //
+
+let swap = changeToLowerCase("MILF")
+function changeToLowerCase(text) {
+
+    let swap = text.toLowerCase();
+
+    return "text changed format and your word now is " + text.toLowerCase();
+}
+
+console.log(swap);
+
+
+// Ex 10 formatare cuvinte cu ajutorul functie si parametru //
