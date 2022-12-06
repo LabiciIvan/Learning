@@ -1,78 +1,46 @@
-// Ex 1 dublu primul numar cu functie//
+// Ex 1 dublu primul numar cu functie si parametru//
 
-DobleNumber()
-function DobleNumber() {
-    let x = 1;
-    x += 1;
-    console.log(x)
+let number = DoubleNumber(12);
+function DoubleNumber(number1) {
+    let result = number1 + number1;
+
+    return "the result is " + (number1 + number1);
 }
+console.log(number)
 
-//Ex 1 dublu al doilea numar cu functie//
-DoubleNumber1()
-function DoubleNumber1() {
-    let y = 2;
-    y += 2;
-    console.log(y);
+//Ex 2 patratul unui numar cu functie si parametru//
+let numbers = TheSquareOfaNumbers(3);
+function TheSquareOfaNumbers(num1) {
+    let squareNumber = num1 * num1;
+
+    return "result is " + (num1 * num1);
 }
+console.log(numbers);
 
-//Ex 2 patratul unui numar cu functie//
-TheSquareOfaNumbers()
-function TheSquareOfaNumbers() {
-    let z = 1;
-    z *= 1;
-    console.log(z);
+//Ex 3 cel mai mare numar cu functie cu if else si parametru//
 
-    let w = 2;
-    w *= 2;
-    console.log(w);
-
-    let q = 3;
-    q *= 3;
-    console.log(q);
-}
-
-//Ex 3 cel mai mare numar cu functie//
-CompareNumber()
-function CompareNumber() {
-    let x = 1;
-    let y = 3;
-    console.log(x < y)
-}
-
-CompareNumber1()
-function CompareNumber1() {
-    let x = 15;
-    let y = 4;
-    console.log(x > y);
-}
-
-CompareNumber2()
-function CompareNumber2() {
-    let x = 1;
-    let y = 1;
-    console.log(x = y);
-}
-
-//Ex 3 cel mai mare numar cu functie cu if else//
-
-CompareNumberIfElse()
-function CompareNumberIfElse() {
-    let result = "answer"
-    let number1 = 3;
-    let number2 = 3.1;
+let compare = CompareNumberIfElse(2, 3);
+function CompareNumberIfElse(number1, number2) {
+    let result = "answer is ";
 
     if (number1 > number2) {
-        result = "answer" + number1;
 
+        result = number1 > number2;
+
+        return "answer is " + number1;
     }
     else {
         (number2 > number1);
-        result = "answer" + number2;
-    }
-    console.log(result);
-}
 
-//Ex 4 factorialul unui numar cu functie//
+        result = number2 > number1;
+
+        return "answer is  " + number2;
+    }
+
+}
+console.log(compare);
+
+//Ex 4 factorialul unui numar cu functie si parametru//
 
 function factorial(n) {
     if (n == 0 || n == 1) {
@@ -82,27 +50,24 @@ function factorial(n) {
         return n * factorial(n - 1);
     }
 }
-let n = 4;
+let n = 5;
 answer = factorial(n);
+
 console.log(answer);
 
-//Ex 5 numarul de litere cu ajutorul unei functi//
+//Ex 5 numarul de litere cu ajutorul unei functii cu parametru//
+let letters = numbersOfLetters("ma-ta");
+function numbersOfLetters(text) {
 
-numbersOfLetters()
-function numbersOfLetters() {
-    let text = "ana";
-    let lenght = text.length;
-    console.log(text.length);
+    let letter = text.length;
 
-    let text2 = "apple";
-    let length = text2.length;
-
-    console.log(text2.length);
+    return "you have " + text.length + " letter in the word";
 }
+console.log(letters)
 
-// Ex 6 numarul de consoane dintr-un numarul//
+// Ex 6 numarul de consoane dintr-un numarul cu functie si parametru//
 
-const vowels = ["a", "e", "i", "o", "u"]
+const vowels = ["a", "e", "i", "o", "u"];
 
 function countVowel(str) {
 
@@ -114,12 +79,60 @@ function countVowel(str) {
         }
     }
 
-
-    return count
+    return "your number of vowels is " + count;
 }
 
-const string = prompt('Enter your world: ');
+const string = prompt('Enter your word to count vowels: ');
 
 const result = countVowel(string);
 
 console.log(result);
+
+// Ex 7 numarul de consoane dintru-un cuvant cu functie si parametru //
+
+const consonant = ["b", "c", "d", "f", "g", "j", "k", "l", "m", "n", "p", "q", "s", "t", "v", "x", "z", "h", "r", "w", "y", "B", "C", "D", "F", "G", "J", "K", "L", "M", "N", "P", "Q", "S", "T", "V", "X", "Z", "H", "R", "W", "Y"];
+
+function countConsonant(str) {
+
+    let count = 0;
+    for (let letter of str.toLowerCase()) {
+        if (consonant.includes(letter)) {
+            count++;
+        }
+    }
+
+    return "your number of consonant is " + count;
+}
+
+const String = prompt('Introduce your word to count consonant: ');
+
+const Result = countConsonant(string);
+
+console.log(Result);
+
+// Ex 8 majuscule cu functie si parametru//
+
+let change = changeToUpperCase("milf")
+function changeToUpperCase(text) {
+
+    let change = text.toUpperCase();
+
+    return "text changed format and your word now is " + text.toUpperCase();
+}
+
+console.log(change);
+
+// Ex 9 scris cu litere mici cu functie si parametru //
+
+let swap = changeToLowerCase("MILF")
+function changeToLowerCase(text) {
+
+    let swap = text.toLowerCase();
+
+    return "text changed format and your word now is " + text.toLowerCase();
+}
+
+console.log(swap);
+
+
+// Ex 10 formatare cuvinte cu ajutorul functie si parametru //
